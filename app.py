@@ -6,7 +6,7 @@ class DemoHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type","text/html")
         self.end_headers()
-        self.wfile.write(b"Hello from CI/CD Docker Pipeline")
+        self.wfile.write(b"Hello")
 
 server = HTTPServer(("0.0.0.0",5000), DemoHandler)
 
